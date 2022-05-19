@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section id="navbar">
+        <div class="nav flex-md">
+            <h1 class="title">Bookshelf Application</h1>
+        </div>
+    </section>
+    <div class="wrapper flex">
+        <section id="header">
+            <div class="header">
+                <!-- <img src="img/Library.png" alt=""> -->
+                <h2>Selamat datang di aplikasi Bookshelf</h2>
+                <p>Baca buku | Tambah buku | Manage buku sesukamu di satu aplikasi</p>
+                <div class="form-add">
+                    <h2>Tambahkan Buku</h2>
+                    <form class="form" action="#" id="form">
+                            <div class="input-book">
+                                <input type="text" id="title" name="title" placeholder="Masukan Judul Buku" required>
+                            </div>
+                            <div class="input-book">
+                                <input type="text" id="author" name="title" placeholder="Penulis Buku" maxlength="21" required>
+                            </div>
+                            <div class="input-book">
+                                <input type="text" id="year" name="title" placeholder="Tahun Terbit" maxLength="4" required>
+                            </div>
+                            <button id="btn-submit" type="submit" value="Submit" name="Submit">Submit</button>
+                            <button class="btn-reset" type="reset" value="Reset" name="Reset">Reset</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section id="bookshelf">
+            <div class="rakbuku">
+                <p>Rak Buku</p>
+            </div>
+            <div class="book-list">
+                <div class="readyet">
+                    <div class="labelReadYet">
+                        <p>Belum Dibaca</p>
+                    </div>
+                    <div id="book">
+                        
+                    </div>
+                </div>
+                <div class="readdone">
+                    <div class="labelReadDone">
+                        <p>Sudah Dibaca</p>
+                    </div>
+                    <div id="completed-book">
+                            
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="footer"></div>
+    <script src="main.js"></script>
+    <script src="dist/sweetalert2.all.min.js"></script>
+</body>
+</html>

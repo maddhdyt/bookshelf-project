@@ -1,0 +1,319 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins/Poppins-Regular.ttf');
+}
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Poppins';
+}
+body{
+    background-color: #fcfcfc;
+}
+.flex{
+    display: flex;
+}
+.flex-md{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-lf{
+    display: flex;
+    justify-content: left;
+}
+.flex-rt{
+    display: flex;
+    justify-content: right;
+}
+.wrapper{
+    background-color: #fcfcfc;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+/* navbar */
+.nav{
+    background-color: rgb(54, 114, 204);
+    width: 100%;
+    height: 70px;
+}
+.title{
+    color: #ffffff;
+}
+
+/* header */
+#header{
+    width: 40%;
+    height: 100%;
+}
+.header{
+    width: 85%;
+    margin: 0 auto;
+}
+.header img{
+    width: 80px; height: 80px;
+}
+.header h2{
+    font-size: 28px;
+    margin-top: 35px;
+}
+/* form tambah buku */
+.form-add h2{
+    margin-top: 20px;
+    font-size: 22px;
+}
+.form {
+    position: relative;
+    flex-direction: column;
+    height: 100%;
+    border-radius: 16px;
+}
+input[type=text] {
+    background: #c3dcf8;
+    border: 2px solid rgb(73, 134, 226);
+    border-radius: 8px;
+    padding: 12px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.input-book input{
+    padding: 10px;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+.form button{
+    margin-top: 20px;
+    width: 49%;
+    height: 35px;
+    background-color: rgb(54, 114, 204);
+    border-radius: 5px;
+    border-color: transparent;
+    color: black;
+    cursor: pointer;
+}
+.form .btn-reset{
+    background-color: rgb(255, 93, 93);
+}
+/* bookshelf */
+#bookshelf{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+}
+.rakbuku{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 40px;
+    border-radius: 0px 0px 7px 7px;
+    background-color:  rgb(54, 114, 204);
+    margin-top: 40px;
+}
+.rakbuku p{
+    font-size: 14px;
+}
+.book-list{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 100%;
+    margin-top: 20px;
+}
+.book-list .readyet, .book-list .readdone{
+    width: 49%;
+    height: 100%;
+    padding-bottom: 30px;
+}
+
+.labelReadYet{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    width: 100%;
+    height: 35px;
+    border-radius: 7px 0px 7px 0px;
+    background-color: rgb(54, 114, 204);
+}
+.readyet .card{
+    background-color: #c3dcf8;
+    border-radius: 7px;
+    width: 100%;
+    height: 120px;
+    margin-top: 10px;
+}
+.labelReadDone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    width: 100%;
+    height: 35px;
+    border-radius: 0px 7px 0px 7px;
+    background-color: rgb(27, 168, 90);
+}
+.readdone .card{
+    background-color: rgb(137, 201, 129);
+    border-radius: 7px;
+    width: 100%;
+    height: 120px;
+    margin-top: 10px;
+}
+
+
+.list-item{
+    display: flex;
+    height: 120px;
+}
+.desc-book{
+    width: 350px;
+    height: 120px;
+}
+.desc-book h4{
+    font-size: 18px;
+    padding: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 250px;
+}
+.detail {
+    font-size: 17px;
+    display: flex;
+    margin-left: 20px;
+}
+.detail p{
+    margin-left: 10px;
+}
+
+.tahunTerbitInfo{
+    margin-left: 10px;
+ }
+
+.btn-checkUnreaded{
+    width: 50px;
+    height: 120px;
+    margin-right: 5px;
+}
+.btn-checkUnreaded .checkButtonUnreaded{
+    background-color: #8dbdeb;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-image: url('img/circle-check.svg');
+    margin-left: -3px;
+    margin-top: 20px;
+}
+.btn-checkUnreaded .trashButton{
+    background-color: #c3dcf8;
+    border: none;
+    cursor: pointer;
+    width: 26px;
+    height: 30px;
+    background-image: url('img/trash-solid.svg');
+    margin-top: 5px;
+}
+ 
+.btn-afterReaded{
+    width: 50px;
+    height: 120px;
+    margin-right: 10px;
+}
+.btn-AfterReaded .undoButton{
+    background-color: rgb(137, 201, 129);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 33px;
+    height: 33px;
+    background-image: url('img/rotate-left.svg');
+    position: relative;
+    margin-top: 20px;
+    margin-left: -5px;
+}
+.btn-AfterReaded .trashButton{
+    background-color: rgb(137, 201, 129);
+    border: none;
+    cursor: pointer;
+    width: 26px;
+    height: 30px;
+    background-image: url('img/trash-solid.svg');
+    margin-top: 5px;
+}
+.footer{
+    width: 100%;
+    height: 100px;
+}
+@media (max-width: 568px){
+    .wrapper{
+        flex-direction: column;
+        height: 100%;
+    }
+    #header{
+        width: 100%;
+        height: 100%;
+    }
+    #bookshelf{
+        width: 100%;
+    }
+    .header{
+        width: 80%;
+    }
+    .header img{
+        width: 70px; height: 70px; margin-top: 35px;
+    }
+    .header h2{
+        font-size: 22px;
+    }
+    .header p{
+        font-size: 14px;
+    }
+    .form-add h2{
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    .form button{
+        width: 49%;
+    }
+    .input-book input{
+        width: 100%;
+        height: 37px;
+    }
+    .input-book input::-webkit-input-placeholder{
+        font-size: 12px;
+    }
+    .rakbuku{
+        width: 80%;
+        margin-top: 30px;
+        height: 35px;
+    }
+    .book-list{
+        flex-direction: column;
+        width: 80%;
+    }
+    .book-list .readyet, .book-list .readdone{
+        width: 100%;
+    }
+    .labelReadDone{
+        margin-top: 30px;
+    }
+    .desc-book h4{
+        max-width: 220px;
+    }
+    .detail{
+        font-size: 15px;;
+    }
+    
+}
